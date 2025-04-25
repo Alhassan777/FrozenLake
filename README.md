@@ -2,7 +2,8 @@
 
 A graphical user interface for the Frozen Lake environment from Gymnasium, featuring Q-Learning based automatic solving capabilities. This implementation includes optimized parameters for solving both deterministic and stochastic (slippery) environments.
 
-![Frozen Lake GUI]()
+
+<img width="1470" alt="Screenshot 2025-04-25 at 4 56 59 PM" src="https://github.com/user-attachments/assets/eafd4143-ec11-4dff-9a12-f58014f1beea" />
 
 ## Project Structure
 
@@ -228,13 +229,6 @@ run_custom_map(custom_map, is_slippery=True)
 - R: Reset environment
 - Q: Quit application
 - H: Show/hide help overlay
-
-### Q-Learning Controls
-- A: Toggle auto-play
-- V: Toggle Q-value display
-- T: Train the agent
-- P: Show training results
-- +/-: Speed up/slow down auto-play
 
 ## Performance Notes
 
