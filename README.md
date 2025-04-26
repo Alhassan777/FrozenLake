@@ -59,23 +59,34 @@ Additional options for solver mode:
 
 ## Installation
 
-### Option 1: Install from requirements
-
-```bash
-pip install -r requirements.txt
-```
-
-### Option 2: Install as a package
+### Install as a package
 
 ```bash
 pip install -e .
 ```
 
-This will install the package and create command-line entry points:
-- `frozen-lake-gui`: Run the game interface
-- `frozen-lake-auto-solver`: Run the auto-solver
-- `frozen-lake-agent-comparison`: Run the agent comparison
-- `frozen-lake-agent-comparison-gui`: Run the agent comparison GUI
+This will install the package with all required dependencies:
+- gymnasium
+- pygame
+- numpy
+- matplotlib
+- tqdm
+- torch
+- pandas
+- seaborn
+- ipython
+
+The package defines the following entry points in setup.py, but note that these may not work directly as the referenced modules need to be updated:
+- `frozen-lake-gui`
+- `frozen-lake-auto-solver`
+- `frozen-lake-agent-comparison`
+- `frozen-lake-agent-comparison-gui`
+
+It's recommended to use the main script instead:
+
+```bash
+python run_frozen_lake.py --mode game
+```
 
 ## Game Mechanics
 
